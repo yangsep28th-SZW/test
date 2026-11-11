@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>我的第一个文件</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #0d1117, #1f2937);
+    color: #e6edf3;
+  }
+  h1 { font-size: 42px; margin: 0 0 18px; }
+  p { color: #8b949e; margin: 6px 0; font-size: 15px; }
+  code { color: #7ee787; }
+</style>
+</head>
+<body>
+  <h1>你好，GitHub！</h1>
+  <p>这是我的第一个文件，打开时间：<span id="date"></span></p>
+  <p>文件位置：<code>test/hello.html</code></p>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toLocaleString("zh-CN");
+  </script>
+</body>
+</html>
